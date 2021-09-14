@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SupportsSwiftPackage</key>
+	<true/>
+	<key>Kind</key>
+	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
+	<key>Description</key>
+	<string>The Composable Architecture Components</string>
+	<key>Summary</key>
+	<string>The Composable Architecture Components</string>
+	<key>SortOrder</key>
+	<integer>1</integer>
+	<key>DefaultCompletionName</key>
+	<string>ComposableModule</string>
+	<key>AllowedTypes</key>
+	<array>
+		<string>public.swift-source</string>
+	</array>
+	<key>MainTemplateFile</key>
+	<string>___FILEBASENAME___.swift</string>
+	<key>Template Author</key>
+	<string>arasan01 @ 2021</string>
+	<key>Platforms</key>
+	<array>
+		<string>com.apple.platform.iphoneos</string>
+		<string>com.apple.platform.macosx</string>
+		<string>com.apple.platform.appletvos</string>
+		<string>com.apple.platform.watchos</string>
+	</array>
+	<key>Options</key>
+	<array>
+		<dict>
+			<key>Description</key>
+			<string>Name of feature you want to implement</string>
+			<key>Default</key>
+			<string></string>
+			<key>Identifier</key>
+			<string>MODULENAME</string>
+			<key>Name</key>
+			<string>Feature name:</string>
+			<key>Required</key>
+			<string>Yes</string>
+			<key>NotPersisted</key>
+			<string>Yes</string>
+			<key>Type</key>
+			<string>text</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_MODULENAME___</string>
+			<key>Identifier</key>
+			<string>productName</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Description</key>
+			<string>Select Base UI Framework</string>
+			<key>Default</key>
+			<string>SwiftUI</string>
+			<key>Identifier</key>
+			<string>frameworkChoice</string>
+			<key>Name</key>
+			<string>UI Framework: </string>
+			<key>Required</key>
+			<string>Yes</string>
+			<key>Type</key>
+			<string>popup</string>
+			<key>Values</key>
+			<array>
+				<string>SwiftUI</string>
+				<string>UIKit</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>
